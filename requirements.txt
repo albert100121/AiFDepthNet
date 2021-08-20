@@ -1,0 +1,12 @@
+# This file may be used to create an environment using:
+# $ conda create --name <env> --file <this file>
+# platform: linux-64
+python=3.6.8=h0371630_0
+h5py=2.8.0=py36h989c5e5_3
+imageio=2.9.0=py_0
+opencv=3.4.2=py36h6fd60c2_1
+pytorch=1.5.1=py3.6_cuda10.2.89_cudnn7.6.5_0
+scikit-image=0.16.2=py36h0573a6f_0
+scipy=1.5.0=py36h0b6359f_0
+torchvision=0.6.1=py36_cu102
+tqdm=4.47.0=py_0
