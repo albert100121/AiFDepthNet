@@ -25,8 +25,8 @@
             <li><a class="nav-item waves-effect waves-light" href="#home">Home</a></li>
             <li><a class="nav-item waves-effect waves-light" href="#abstract">Abstract</a></li>
             <li><a class="nav-item waves-effect waves-light" href="#paper">Paper</a></li>
-            <li><a class="nav-item waves-effect waves-light" href="#download">Download</a></li>
             <li><a class="nav-item waves-effect waves-light" href="#results">Results</a></li>
+            <li><a class="nav-item waves-effect waves-light" href="#download">Download</a></li>
             <li><a class="nav-item waves-effect waves-light" href="#dataset">Dataset</a></li>
           </ul>
   
@@ -49,15 +49,15 @@
   
         <div class="row center">
           <h5 class="header col l2 m4 s12">
-            <div class="author"><a href="http://albert100121.github.io/" target="blank">Ning-Hsu Wang<sup>1,3</sup></a></div>
+            <div class="author"><a href="http://albert100121.github.io/" target="blank">Ning-Hsu Wang<sup>1,2</sup></a></div>
           </h5>
   
           <h5 class="header col l1 m4 s12">
-            <div class="author"><a href="https://www.linkedin.com/in/ren-wang-61b273160/?originalSubdomain=tw" target="blank">Ren Wang<sup>3</sup></a></div>
+            <div class="author"><a href="https://www.linkedin.com/in/ren-wang-61b273160/?originalSubdomain=tw" target="blank">Ren Wang<sup>1</sup></a></div>
           </h5>
           
           <h5 class="header col l2 m4 s12">
-            <div class="author"><a href="http://www.cmlab.csie.ntu.edu.tw/~yulunliu/" target="blank">Yu-Lun Liu<sup>2,3</sup></a></div>
+            <div class="author"><a href="http://www.cmlab.csie.ntu.edu.tw/~yulunliu/" target="blank">Yu-Lun Liu<sup>1</sup></a></div>
           </h5>
   
           <h5 class="header col l2 m4 s12">
@@ -65,30 +65,25 @@
           </h5>
   
           <h5 class="header col l2 m4 s12">
-            <div class="author"><a href="https://scholar.google.com/citations?user=0O9rukQAAAAJ&hl=en" target="blank">Yu-Lin Chang<sup>3</sup></a></div>
+            <div class="author"><a href="https://scholar.google.com/citations?user=0O9rukQAAAAJ&hl=en" target="blank">Yu-Lin Chang<sup>1</sup></a></div>
           </h5>
 
           <h5 class="header col l2 m4 s12">
-            <div class="author"><a href="https://tw.linkedin.com/in/chia-ping-chen-81674078" target="blank">Chia-Ping Chen<sup>3</sup></a></div>
+            <div class="author"><a href="https://tw.linkedin.com/in/chia-ping-chen-81674078" target="blank">Chia-Ping Chen<sup>1</sup></a></div>
           </h5>
 
           <h5 class="header col l1 m4 s12">
-            <div class="author"><a href="https://corp.mediatek.com/investor-relations/corporate-governance/corporate-management" target="blank">Kevin Jou<sup>3</sup></a></div>
+            <div class="author"><a href="https://corp.mediatek.com/investor-relations/corporate-governance/corporate-management" target="blank">Kevin Jou<sup>1</sup></a></div>
           </h5>
           
         </div>
   
         <div class="row center">
           <h5 class="header col l4 m4 s12">
-            <div class="affiliation"><a href="http://nthu-en.site.nthu.edu.tw" target="blank"><sup>1</sup>National Tsing Hua University</a></div>
+            <div class="affiliation"><a href="https://www.mediatek.tw/" target="blank"><sup>1</sup>MediaTek Inc.</a></div>
           </h5>
-  
           <h5 class="header col l4 m4 s12">
-            <div class="affiliation"><a href="https://www.ntu.edu.tw/" target="blank"><sup>2</sup>National Taiwan University</a></div>
-          </h5>
-  
-          <h5 class="header col l4 m4 s12">
-            <div class="affiliation"><a href="https://www.mediatek.tw/" target="blank"><sup>3</sup>MediaTek Inc.</a></div>
+            <div class="affiliation"><a href="http://nthu-en.site.nthu.edu.tw" target="blank"><sup>2</sup>National Tsing Hua University</a></div>
           </h5>
           
         </div>
@@ -104,7 +99,7 @@
         <!--   Icon Section   -->
         <div class="row center">
           <div class="col l12 m12 s12">
-            <img class="responsive-img" src="images/arch.pdf">
+            <img class="responsive-img" src="images/arch.jpg">
           </div>
           
         </div>
@@ -123,111 +118,88 @@
         As a result, the proposed method can be trained either supervisedly with ground truth depth, or unsupervisedly with AiF images as supervisory signals.
         We show in various experiments that our method outperforms the state-of-the-art methods both quantitatively and qualitatively, and also has higher efficiency in inference time.
       </div>
-  
-      
+
+      <div class="section row scrollspy" id="results">
+        <div class="title">Results</div>
+        <p><h5>DDFF-12-Scene</h5></p>
+        <div class="row center">
+          <!-- <div class="subtitle"><a href="Obstruction_HTML_CameraReady/result.html">Additional Comparisons</a></div> -->
+          <!-- <a class="summary" href="Obstruction_HTML_CameraReady/result.html"><div class="col s12 summary-obstruction"></div></a> -->
+          <img src="images/result_imgs/DDFF.png" width="70%">
+          <img src="images/result_imgs/DDFF_viz.png" width="70%">
+        </div>
+        <p><h5>4D Light Field Dataset</h5></p>
+          <div class="row center">
+          <img src="images/result_imgs/4D-LF.png" width="70%">
+          <img src="images/result_imgs/4D-LF_viz.png" width="70%">
+        </div>
+        <p><h5>DefocusNet Dataset</h5></p>
+        <div class="row center">
+          <img src="images/result_imgs/DefocusNet.png" width="70%">
+          <img src="images/result_imgs/DefocusNet_viz.png" width="70%">
+        </div>
+        <p><h5>Mobile Depth Dataset</h5></p>
+        <div class="row center">
+          <img src="images/result_imgs/Mobile.png" width="70%">
+        </div>
+
+        <div class="section row scrollspy" id="download">
+          <div class="title">Download</div>
+          <div class="row">
+    
+            <div class="col m6 s12 center">
+              <a href="" target="_blank">
+                <img src="images/github.png">
+              </a>
+              <br>
+              <a href="" target="_blank">Code</a>
+            </div>
+    
+            <div class="col m6 s12 center">
+              <a href="" target="_blank">
+                <img src="images/icon_zip.png">
+              </a>
+              <br>
+              <a href="" target="_blank">Results (Coming Soon)</a>
+            </div>
+    
+          </div>
+    
+        </div>
+      <div class="section row scrollspy" id="dataset">
+            <div class="title">Dataset</div>
+            <div class="row center">
+                Coming Soon
+            </div>
+        <br>  
+      </div>
+
       <div class="row section scrollspy" id="paper">
-        <div class="title">Papers</div>
+        <div class="title">Paper</div>
         <br>
-  
         <div class="row">
-        
           <div class="col m6 s12 center">
             <a href="" target="_blank">
               <img src="images/icon_pdf.png">
             </a>
             <br>
-            <a href="https://arxiv.org/abs/2004.01180" target="_blank">ICCV 2021 (Coming Soon)</a>
+            <a href="https://arxiv.org/abs/2108.10843" target="_blank">ICCV 2021 (arXiv)</a>
           </div>
-  
-          <!-- <div class="col m6 s12 center">
-            <a href="ObstructionRemoval-supp.pdf" target="_blank">
-              <img src="images/icon_pdf.png">
-            </a>
-            <br>
-            <a href="ObstructionRemoval-supp.pdf" target="_blank">Supplementary Material</a>
-          </div> -->
         </div>
-  
       </div>
-  
   
       <div class="row">
         <div class="subtitle">Citation</div>
         <p>Ning-Hsu Wang, Ren Wang, Yu-Lun Liu, Yu-Hao Huang, Yu-Lin Chang, Chia-Ping Chen, Kevin Jou, "Bridging Unsupervised and Supervised Depth from Focus via All-in-Focus Supervision", in International Conference on Computer Vision (ICCV), 2021</p>
-  
         <br>
-  
         <div class="subtitle">Bibtex</div>
         <pre>@inproceedings{Wang-ICCV-2021,
       author    = {Wang, Ning-Hsu and Wang, Ren and Liu, Yu-Lun and Huang, Yu-Hao and Chang, Yu-Lin and Chen, Chia-Ping and Jou, Kevin}, 
       title     = {Bridging Unsupervised and Supervised Depth from Focus via All-in-Focus Supervision}, 
       booktitle = {IEEE International Conference on Computer Vision},
       year      = {2021}
-  }
-  </pre>
+  }</pre>
       </div>
-  
-  
-  
-      <div class="section row scrollspy" id="download">
-        <div class="title">Download</div>
-        <div class="row">
-  
-          <div class="col m6 s12 center">
-            <a href="" target="_blank">
-              <img src="images/github.png">
-            </a>
-            <br>
-            <a href="" target="_blank">Code (Coming Soon)</a>
-          </div>
-  
-          <div class="col m6 s12 center">
-            <a href="" target="_blank">
-              <img src="images/icon_zip.png">
-            </a>
-            <br>
-            <a href="" target="_blank">Results (Coming Soon)</a>
-          </div>
-  
-        </div>
-  
-      </div>
-  
-  
-      <div class="section row scrollspy" id="results">
-        <div class="title">Results</div>
-        <p><h4>DDFF-12-Scene</h4></p>
-        <div class="row center">
-          <!-- <div class="subtitle"><a href="Obstruction_HTML_CameraReady/result.html">Additional Comparisons</a></div> -->
-          <!-- <a class="summary" href="Obstruction_HTML_CameraReady/result.html"><div class="col s12 summary-obstruction"></div></a> -->
-          <img src="images/result_imgs/DDFF.png" width="90%">
-          <img src="images/result_imgs/DDFF_viz.png" width="90%">
-        </div>
-        <p><h4>4D Light Field Dataset</h4></p>
-          <div class="row center">
-          <img src="images/result_imgs/4D-LF.png" width="90%">
-          <img src="images/result_imgs/4D-LF_viz.png" width="90%">
-        </div>
-        <p><h4>DefocusNet Dataset</h4></p>
-        <div class="row center">
-          <img src="images/result_imgs/DefocusNet.png" width="90%">
-          <img src="images/result_imgs/DefocusNet_viz.png" width="90%">
-        </div>
-        <p><h4>Mobile Depth Dataset</h4></p>
-        <div class="row center">
-          <img src="images/result_imgs/Mobile.png" width="90%">
-        </div>
-
-      <div class="section row scrollspy" id="dataset">
-            <div class="title">Dataset</div>
-            <div class="row center">
-                Coming Soon
-            </div>
-        <br>
-  
-  
-      </div>
-  
     <footer class="page-footer grey lighten-3">
       
       <div class="footer-copyright center black-text">
