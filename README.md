@@ -1,6 +1,6 @@
 # [ICCV 2021] Bridging Unsupervised and Supervised Depth from Focus via All-in-Focus Supervision
 
-[Project Page](https://albert100121.github.io/AiFDepthNet/) | [Paper (Arxiv)]() | [Dataset]() Coming Soon
+[Project Page](https://albert100121.github.io/AiFDepthNet/) | [Paper (Arxiv)](https://arxiv.org/abs/2108.10843) | [Dataset]() Coming Soon
 
 Depth estimation is a long-lasting yet important task in computer vision. Most of the previous works try to estimate depth from input images and assume images are all-in-focus (AiF), which is less common in real-world applications. On the other hand, a few works take defocus blur into account and consider it as another cue for depth estimation. In this paper, we propose a method to estimate not only a depth map but an AiF image from a set of images with different focus positions (known as a focal stack). We design a shared architecture to exploit the relationship between depth and AiF estimation. As a result, the proposed method can be trained either supervisedly with ground truth depth, or unsupervisedly with AiF images as supervisory signals. We show in various experiments that our method outperforms the state-of-the-art methods both quantitatively and qualitatively, and also has higher efficiency in inference time.
 
@@ -32,10 +32,13 @@ Coming Soon
 Install packages from requirements.txt in your conda environment.
 ```bash
 conda create --name AiFDepthNet --file requirements.txt -c pytorch
+conda activate AiFDepthNet
 ```
 
 #### 4. Run The following command
-Coming Soon
+```bash
+CUDA_VISIBLE_DEVICES=[GPU_ID] python test.py --txt(optional) [path to the txt file of the dataset] --h5py(optional) [path to the h5py file of the dataset] --pth [path to your pretrained model] --outdir(optional) [path to your output results storage] --dataset [dataset name] --disp_depth [pretrained model is trained with disparity or depth] --test(optional) [Run DDFF-12-Scene Dataset on testing data]
+```
 
 ## Results
 #### DDFF-12-Scene Dataset
