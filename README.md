@@ -1,6 +1,6 @@
 # [ICCV 2021] Bridging Unsupervised and Supervised Depth from Focus via All-in-Focus Supervision
 
-[Project Page](https://albert100121.github.io/AiFDepthNet/) | [Paper (Arxiv)](https://arxiv.org/abs/2108.10843) | [Dataset]() Coming Soon
+[Project Page](https://albert100121.github.io/AiFDepthNet/) | [Paper (Arxiv)](https://arxiv.org/abs/2108.10843)
 
 Depth estimation is a long-lasting yet important task in computer vision. Most of the previous works try to estimate depth from input images and assume images are all-in-focus (AiF), which is less common in real-world applications. On the other hand, a few works take defocus blur into account and consider it as another cue for depth estimation. In this paper, we propose a method to estimate not only a depth map but an AiF image from a set of images with different focus positions (known as a focal stack). We design a shared architecture to exploit the relationship between depth and AiF estimation. As a result, the proposed method can be trained either supervisedly with ground truth depth, or unsupervisedly with AiF images as supervisory signals. We show in various experiments that our method outperforms the state-of-the-art methods both quantitatively and qualitatively, and also has higher efficiency in inference time.
 
@@ -23,7 +23,36 @@ This is the official **PyTorch** implementation of
 
 ## Usage 
 #### 1. Download Dataset
+**DDFF-12-Scene Dataset**
+1. Download trainval and test h5py to ```./data```
+[ddff-dataset-trainval.h5py](https://vision.in.tum.de/webarchive/hazirbas/ddff12scene/ddff-dataset-trainval.h5)
+[ddff-dataset-test.h5py](https://vision.in.tum.de/webarchive/hazirbas/ddff12scene/ddff-dataset-test.h5)
+
+**DefocusNet Dataset**
+1. Download zip file to ```./data/DefocusNet_Gen```
+    - [Official Link](https://drive.google.com/file/d/1bR-WZQf44s0nsScC27HiEwaXPyEQ3-Dw/view)
+    - [Backup Link](https://drive.google.com/file/d/1HF_ekCowK6L67DWkBiYs2DqT95rCP4fl/view?usp=sharing)
+2. Run the following script under ```./data/DefocusNet_Gen```
+    ```bash
+    unzip fs_6.zip
+    python DefocusNet_gen_txt.py
+    cd ../../
+
+    ``` 
+**4D-Light-Field Dataset**
+1. Please go to this [website](https://lightfield-analysis.uni-konstanz.de) to request for the 4D-Light-Field dataset
+2. download ```full_data.zip``` under ```./data/4D-Light-Field_Gen```
+3. Run ```./Gen_h5py.sh``` under  ```./data/4D-Light-Field_Gen```
+
+**FlyingThings3D Dataset**
 Coming Soon
+
+**Middlebury Dataset**
+Coming Soon
+
+**Mobile Depth Dataset**
+1. Download both zip files from https://www.supasorn.com/dffdownload.html to ```./data/Mobile_Depth_Gen```
+2. Run ```./Mobile_Depth_gen_txt.sh``` under ```./data/Mobile_Depth_Gen```
 
 #### 2. Download Pretrained Model
 Coming Soon
