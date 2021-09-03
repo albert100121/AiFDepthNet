@@ -32,17 +32,21 @@ This is the official **PyTorch** implementation of
 1. Download zip file to ```./data/DefocusNet_Gen```
     - [Official Link](https://drive.google.com/file/d/1bR-WZQf44s0nsScC27HiEwaXPyEQ3-Dw/view)
 
-2. Run the following script under ```./data/DefocusNet_Gen```
+2. Run the following command under ```./data/DefocusNet_Gen```
     ```bash
     unzip fs_6.zip
     python DefocusNet_gen_txt.py
     cd ../../
-
     ``` 
 **4D-Light-Field Dataset**
 1. Go to this [website](https://lightfield-analysis.uni-konstanz.de) to request for the 4D-Light-Field dataset
 2. Download ```full_data.zip``` under ```./data/4D-Light-Field_Gen```
-3. Run ```./Gen_h5py.sh``` under  ```./data/4D-Light-Field_Gen```
+3. Run the following command under ```./data/4D-Light-Field_Gen```
+    ```bash
+    unzip full_data.zip
+    python LF2hdf5.py --base_dir ./full_data --output_dir ./LF
+    python HCI_FS_gen_DDFF.py --LF_path ./LF/HCI_LF_trainval.h5 --output_dir ./FS 
+    ```
 
 **FlyingThings3D Dataset**
 1. Download [FlyingThings3D_FS](https://drive.google.com/file/d/1tYuaJ2G2PWYWJs6pfrDcsLGgeohhsqA_/view?usp=sharing) under ```./data/Barron2015_Gen/```
@@ -54,7 +58,21 @@ This is the official **PyTorch** implementation of
 
 **Mobile Depth Dataset**
 1. Download both zip files from https://www.supasorn.com/dffdownload.html to ```./data/Mobile_Depth_Gen```
-2. Run ```./Mobile_Depth_gen_txt.sh``` under ```./data/Mobile_Depth_Gen```
+2. Run the following command under ```./data/Mobile_Depth_Gen```
+    ```bash
+    mkdir Photos_Calibration_Results
+    mv depth_from_focus_data2.zip Photos_Calibration_Results
+    cd Photos_Calibration_Results
+    unzip ./depth_from_focus_data2.zip
+    mv calibration/metal calibration/metals
+    mv calibration/GT calibration/zeromotion
+    mv calibration/GTSmall calibration/smallmotion
+    mv calibration/GTLarge calibration/largemotion
+    cd ..
+    unzip depth_from_focus_data3.zip
+    python gen_txt_mobile.py
+    cd ../../
+    ```
 
 #### 2. Download Pretrained Model
 1. Download the ckpt.zip file and upzip
