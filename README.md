@@ -45,7 +45,7 @@ This is the official **PyTorch** implementation of
     ```bash
     unzip full_data.zip
     python LF2hdf5.py --base_dir ./full_data --output_dir ./LF
-    python HCI_FS_gen_DDFF.py --LF_path ./LF/HCI_LF_trainval.h5 --output_dir ./FS 
+    python FS_gen.py --LF_path ./LF/HCI_LF_trainval.h5 --output_dir ./FS 
     ```
 
 **FlyingThings3D Dataset**
