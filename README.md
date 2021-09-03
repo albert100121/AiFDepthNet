@@ -31,7 +31,7 @@ This is the official **PyTorch** implementation of
 **DefocusNet Dataset**
 1. Download zip file to ```./data/DefocusNet_Gen```
     - [Official Link](https://drive.google.com/file/d/1bR-WZQf44s0nsScC27HiEwaXPyEQ3-Dw/view)
-    - [Backup Link](https://drive.google.com/file/d/1HF_ekCowK6L67DWkBiYs2DqT95rCP4fl/view?usp=sharing)
+
 2. Run the following script under ```./data/DefocusNet_Gen```
     ```bash
     unzip fs_6.zip
@@ -40,22 +40,25 @@ This is the official **PyTorch** implementation of
 
     ``` 
 **4D-Light-Field Dataset**
-1. Please go to this [website](https://lightfield-analysis.uni-konstanz.de) to request for the 4D-Light-Field dataset
-2. download ```full_data.zip``` under ```./data/4D-Light-Field_Gen```
+1. Go to this [website](https://lightfield-analysis.uni-konstanz.de) to request for the 4D-Light-Field dataset
+2. Download ```full_data.zip``` under ```./data/4D-Light-Field_Gen```
 3. Run ```./Gen_h5py.sh``` under  ```./data/4D-Light-Field_Gen```
 
 **FlyingThings3D Dataset**
-Coming Soon
+1. Download [FlyingThings3D_FS](https://drive.google.com/file/d/1tYuaJ2G2PWYWJs6pfrDcsLGgeohhsqA_/view?usp=sharing) under ```./data/Barron2015_Gen/```
+2. Unzip the dataset
 
 **Middlebury Dataset**
-Coming Soon
+1. Download [Middlebury_FS](https://drive.google.com/file/d/1VaMTYNvReg83dtkDPxPHzkxjtLgITtRA/view?usp=sharing) under ```./data/Barron2015_Gen/```
+2. Unzip the dataaset
 
 **Mobile Depth Dataset**
 1. Download both zip files from https://www.supasorn.com/dffdownload.html to ```./data/Mobile_Depth_Gen```
 2. Run ```./Mobile_Depth_gen_txt.sh``` under ```./data/Mobile_Depth_Gen```
 
 #### 2. Download Pretrained Model
-Coming Soon
+1. Download the ckpt.zip file and upzip
+[ckpt.zip](https://drive.google.com/file/d/1Lk4tJ7AKRJPGIfAjhxVMXoEFZBplmkHp/view?usp=sharing)
 
 #### 3. Prepare Runtime Environment
 Install packages from requirements.txt in your conda environment.
