@@ -1,6 +1,6 @@
 # [ICCV 2021] Bridging Unsupervised and Supervised Depth from Focus via All-in-Focus Supervision
 
-[Project Page](https://albert100121.github.io/AiFDepthNet/) | [Paper (Arxiv)](https://arxiv.org/abs/2108.10843)
+[Project Page](https://albert100121.github.io/AiFDepthNet/) | [Paper (Arxiv)](https://arxiv.org/abs/2108.10843) | [Video](https://drive.google.com/file/d/1ZXNaQ3vrmjfiab_mm-odPHpdrqrgdYrE/view?usp=sharing) | [Poster](https://drive.google.com/file/d/1OQT8DX5eYwKfnz4nnRGcSWZD-YFMoUb3/view?usp=sharing)
 
 Depth estimation is a long-lasting yet important task in computer vision. Most of the previous works try to estimate depth from input images and assume images are all-in-focus (AiF), which is less common in real-world applications. On the other hand, a few works take defocus blur into account and consider it as another cue for depth estimation. In this paper, we propose a method to estimate not only a depth map but an AiF image from a set of images with different focus positions (known as a focal stack). We design a shared architecture to exploit the relationship between depth and AiF estimation. As a result, the proposed method can be trained either supervisedly with ground truth depth, or unsupervisedly with AiF images as supervisory signals. We show in various experiments that our method outperforms the state-of-the-art methods both quantitatively and qualitatively, and also has higher efficiency in inference time.
 
